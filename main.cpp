@@ -33,7 +33,7 @@ area make_area(const difficulty d)
   switch (d)
   {
   case difficulty::kEasy:
-    return area{9, 9, 1};
+    return area{9, 9, 10};
   case difficulty::kAdvanced:
     return area{16, 16, 40};
   case difficulty::kHard:
