@@ -1,8 +1,8 @@
 #pragma once
 
-enum class cell {
-  kUnknown,
-  kBomb,
-  kFlag,
-  kOpened,
+enum class cell: char {
+  kUnknown = 'w',
+  kBomb = '*',
+  kFlag = 'F',
+  kDigged = '-',
 };

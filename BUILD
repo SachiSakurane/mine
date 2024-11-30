@@ -10,6 +10,15 @@ cc_library(
 )
 
 cc_library(
+    name = "area",
+    srcs = ["area.cpp"],
+    hdrs = ["area.hpp"],
+    deps = [
+        "schema",
+    ]
+)
+
+cc_library(
     name = "perse_parameters",
     hdrs = ["perse_parameters.hpp"],
     srcs = ["perse_parameters.cpp"],
@@ -19,12 +28,12 @@ cc_library(
     ],
 )
 
-
 cc_binary(
     name = "mine",
     srcs = ["main.cpp"],
     deps = [
-      "controller",
-      "perse_parameters",
+        "area",
+        "controller",
+        "perse_parameters",
     ],
 )
