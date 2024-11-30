@@ -9,3 +9,23 @@ Fで旗
 
 `-d`コマンドで`[easy, advanced, hard, impossible]`渡すと難易度変更。
 終
+
+## run
+```
+bazel run mine
+```
+
+## example
+```
+remain: 20
+
+ w w w w w w w w w
+ 1 2 w w w w w w w
+ - 1 1 1 1 w w w w
+ - - - - 1 1 2 w w
+ - - - - - - 1 2 2
+ - 1 1 1 - - - - -
+ 1 2 w 1[-]- - - -
+ w w w 2 - - - 1 1
+ w w w 1 - - - 1 w
+```
